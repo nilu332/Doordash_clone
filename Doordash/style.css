@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "bold";
-    src: url(font/TTNorms-Bold.otf);
+    src: url(./font/TTNorms-Bold\ \(2\).woff2);
 }
 
 @font-face {
@@ -18,10 +18,19 @@
     font-family: "regular";
     src: url(font/TTNorms-Regular.otf);
 }
+.body,html{
+    overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.main-strt{
+    height: 0px;
+    margin-top: -64px;
+    position: absolute;
+    display: block;
 }
 .main{
     display: grid;
@@ -36,17 +45,14 @@
 .logo{
     border: 1px solid #f1f1f1ff;
     border-radius: 8px;
-
 }
 .browse{
-    font-family: bold;
-    color: #191919;
+    font-family: "bold";
+    color: rgb(25, 25, 25);
     text-overflow: ellipsis;
-    width: 100%;
     overflow: hidden;
     white-space: nowrap;
     font-size: 16px;
-    font-weight: 700;
     line-height: 22px;
     letter-spacing: -0.01px;
     display: block;
@@ -102,11 +108,12 @@
     letter-spacing: -0.01px;
     padding: 0px 12px;
     text-decoration: none;
-    font-family: bold;
+    font-family: "bold";
     cursor: pointer;
     box-shadow: 1px;
-    top: 16px;
-}
+    top: 16px; 
+} 
+
 .median{
     display: flex;
     flex-direction: column;
@@ -179,12 +186,12 @@
   box-sizing: border-box;
 }
 h1{
-    /*font-size: 24px;*/
+    font-size: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: bold;
+    font-family: "bold";
     box-sizing: border-box;
     max-width: 345px;
     letter-spacing: 0px;
@@ -315,6 +322,7 @@ h1{
     box-sizing: border-box;
     margin: 20px 20px 0px 20px;
     display: flex;
+
 }
 .faster-out{
     background-color: rgb(247, 247, 247);
@@ -441,6 +449,7 @@ h1{
     box-sizing: border-box;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin: 0 auto;
 }
 .image{
     margin-right: 32px;
@@ -521,6 +530,7 @@ h1{
     display: block;
 }
 .mobile h2{
+    color: #191919ff;
     font-family: bold;
     font-size: 32px;
     font-weight: 700;
@@ -530,15 +540,12 @@ h1{
     padding: 0px;
 }
 .mobile h3{
-    margin-top: 0px;
     text-decoration: none;
-    font-family: regular;
+    font-family: "regular";
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.01px;
-    margin: 0px;
-    padding: 0px;
 }
 
 .pizza{
@@ -576,7 +583,7 @@ h1{
     text-align: left;
     max-width: 90%;
     margin-top: 20px;
-    font-family: bold;
+    font-family: "bold";
     font-size: 23px;
     font-weight: 700;
     line-height: 28px;
@@ -1609,10 +1616,28 @@ h1{
 }
 
 
-/* -------------------------------------------- */
 
-@media screen and (min-width: 768px) { 
-    .main_div {
-        display: none;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
