@@ -1,22 +1,10 @@
-
 @font-face {
     font-family: "bold";
-    src: url(./font/TTNorms-Bold\ \(2\).woff2);
+    src: url(font/TTNorms-Bold\ \(4\).woff2);
 }
-
-@font-face {
-    font-family: "light";
-    src: url(font/TTNorms-Light.otf);
-}
-
 @font-face {
     font-family: "medium";
-    src: url(font/TTNorms-Medium.otf);
-}
-
-@font-face {
-    font-family: "regular";
-    src: url(font/TTNorms-Regular.otf);
+    src: url(font/TTNorms-Medium\ \(3\).woff2);
 }
 .body,html{
     overflow-x: hidden;
@@ -59,7 +47,7 @@
 }
 .discover{
     color: #606060ff;
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 500    ;
     line-height: 20px;
@@ -71,7 +59,7 @@
     overflow: hidden;
 } 
 .star{
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 500;
     color: rgb(96, 96, 96);
@@ -167,6 +155,7 @@
     width: 1px;
     overflow: hidden;
     box-sizing: border-box;
+    margin-left: 8px;
 }
 .global{
     display: flex;
@@ -181,22 +170,17 @@
   display: flex;
   justify-content: center;
   margin-bottom: 24px;
-  font-size: 22px;
-  color: #ffffff;
-  box-sizing: border-box;
 }
 h1{
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: "bold";
-    box-sizing: border-box;
-    max-width: 345px;
-    letter-spacing: 0px;
+    max-width: 350px;
+    letter-spacing: -0.01px;
     font-size: 22px;
     line-height: 28px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "bold";
+    font-weight: 700;
+    display: block;
 }
 .margin{
     position: absolute;
@@ -225,11 +209,11 @@ h1{
 }
 .login span{
     padding:  0px 12px;
-    font-family: bold;
+    font-family: "bold";
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: -0.01;
+    letter-spacing: -0.01px;
     text-align: center;
 }
 .open_btn{
@@ -244,9 +228,9 @@ h1{
 }
 .open_btn span{
     padding: 0px 12px;
-    font-family: bold;
+    font-family: "bold";
     font-size: 16px;
-    letter-spacing: -0.01;
+    letter-spacing: -0.01px;
     text-align: center;
     font-weight: 700;
     line-height: 22px;
@@ -259,62 +243,165 @@ h1{
     width: 100%;
     padding: 0px 24px 0px 0px;
     column-gap: 8px;
+    box-sizing: border-box;
 }
-.main_enter{
+.delivery-out{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.delivery-border{
+    border-radius: 12px;
+    display: block;
+    min-height: 40px;
+    width: 100%;
+    max-width: 100%;
+}
+.delivery-pad{
     border-radius: 32px;
+    font-family: "medium";
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    font-weight: 500;
+    color: #191919ff;
     display: flex;
     align-items: center;
-    width: 298px;
+    border-radius: 32px;
     z-index: 1;
-    padding: 6px 16px;
+    padding: 6px 16px 6px 16px;
     background-color: #ffffff;
-    justify-content: space-evenly;
-    height: 52px;
+    max-width: 298px;
+    justify-self: center;
 }
-.enter{
-    margin-top: 12px;
-    margin-bottom: 12px;   
+.search-iconmarg{
+    max-width: 100%;
+    margin-right: 12px;
 }
-.enter input{
+.search-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    pointer-events: none;
+    border: none;
+}
+.enter-marg{
+    flex-grow: 1;
+    background: inherit;
+    max-width: 100%;
+    margin-right: 12px;
+}
+.enter-bag{
     text-overflow: ellipsis;
-    font-family: medium;
+    font-family: "medium";
     font-size: 16px;
     line-height: 22px;
     letter-spacing: -0.01px;
     font-weight: 500;
     width: 100%;
+    display: flex;
+    background: inherit;
+    color: currentColor;
     border: none;
-    outline: none;
-    display: flex;
-    padding: 0px;
 }
-.arrow{
-    display: flex;
+.arrow-out{
+    max-width: 100%;  
 }
-.user_button{
-    margin-top: 16px;
-    padding:0px 12px;
-    display: flex;
-    min-height: 32px;
-    align-items: center;
+.right-arw{
+    position: relative;
+    max-width: 100%;
+    display: inline-flex;
+    min-height: 40px;
     border-radius: 9999px;
-    border: none;
     cursor: pointer;
+    text-align: center;
     background-color: #ffffff;
     color: #191919ff;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
-.user_icon svg{
-    flex-shrink: 0;
+.icon-img{
+    margin-top: 16px;
+    position: relative;
+    max-width: 100%;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #ffffff;
+    color: #191919ff;
+    border: 0;
 }
-.login_text{
-    font-family: bold;
+.icon-img-pad{
+    display: block;
+    flex-grow: 1;
+    max-width: 100%;
+    opacity: 1;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+.log-bagr{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.round{
+    flex-grow: 1;
+    flex-shrink: 2;
+    min-width: 0px;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+.icon-a{
+    width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-a  svg{
+    flex-shrink: 0; 
+}
+.login-a{
+    margin-left: 4px;
+    -webkit-box-flex: 2;
+    flex-grow: 2;
+    min-width: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+.loginnnn{
+    color: #191919ff;
+    font-family: "medium";
     font-size: 14px;
-    font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.01px;
-    margin-left: 4px;
+    font-weight: 700;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    border: none;
 }
-
 /* second-section */
 .faster{
     max-width: 400px;
@@ -357,7 +444,7 @@ h1{
 }
 .browse-dd span{
     color: #191919ff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
@@ -374,7 +461,7 @@ h1{
     margin-left: 4px;
     margin-top: 2px;
     color: #606060ff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -413,7 +500,7 @@ h1{
 .cont span{
     width: 100%;
     color: #ffffff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
@@ -464,7 +551,7 @@ h1{
 }
 .dasher-bec h2{
     color: #191919ff;
-    font-family: bold;
+    font-family: "bold";
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
@@ -474,7 +561,7 @@ h1{
 }
 .dasher-bec h3{
     margin-top: 0px;
-    font-family: regular;
+    font-family: "medium";
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
@@ -493,7 +580,7 @@ h1{
 }
 .start span{
     color: #eb1700ff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
@@ -512,7 +599,7 @@ h1{
 }
 .str span{
     color: #eb1700ff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
@@ -531,7 +618,7 @@ h1{
 }
 .mobile h2{
     color: #191919ff;
-    font-family: bold;
+    font-family: "bold";
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
@@ -541,7 +628,7 @@ h1{
 }
 .mobile h3{
     text-decoration: none;
-    font-family: "regular";
+    font-family: "medium";
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
@@ -594,7 +681,7 @@ h1{
     text-align: left;
     margin-top: 10px;
     color: #191919ff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 17px;
     font-weight: 700;
     line-height: 22px;
@@ -604,7 +691,7 @@ h1{
     text-align: left;
     margin-top: 10px;
     color: #191919ff;
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -645,7 +732,7 @@ h1{
 }
 .find-rest{
     color: currentColor;
-    font-family: bold;
+    font-family: "bold";
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
@@ -704,7 +791,7 @@ h1{
     filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
     max-width: 90%;
     margin-top: 20px;
-    font-family: bold;
+    font-family: "bold";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -715,7 +802,7 @@ h1{
     color: white;
     filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
     margin-top: 10px;
-    font-family: medium;
+    font-family: "medium";
     font-size: 17px;
     font-weight: 700;
     line-height: 22px;
@@ -726,7 +813,7 @@ h1{
     color: white;
     filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
     margin-top: 10px;
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -766,7 +853,7 @@ h1{
     max-width: 90%;
     margin-top: 20px;
     color: #191919ff;
-    font-family: bold;
+    font-family: "bold";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -776,7 +863,7 @@ h1{
     text-align: left;
     margin-top: 10px;
     color: #191919ff;
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -794,7 +881,7 @@ h1{
     text-align: center;
     max-width: 300px;
     color: #191919ff;
-    font-family: bold;
+    font-family: "bold";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -839,7 +926,7 @@ h1{
     max-width: 90%;
     margin-top: 20px;
     color: #191919ff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -849,7 +936,7 @@ h1{
     text-align: center;
     margin-top: 10px;
     color: #191919ff;
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -859,7 +946,7 @@ h1{
     text-align: center;
     margin-top: 10px;
     color: #191919ff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 12px;
     font-weight: 700;
     line-height: 18px;
@@ -877,7 +964,7 @@ h1{
     text-align: center;
     max-width: 300px;
     color: #191919ff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -934,7 +1021,7 @@ h1{
     max-width: 90%;
     margin-top: 20px;
     color: #191919ff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -945,7 +1032,7 @@ h1{
     text-align: left;
     margin-top: 10px;
     color: #191919ff;
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -963,7 +1050,7 @@ h1{
 .more-pa h2{
     text-align: center;
     margin-bottom: 4px;
-    font-family: medium;
+    font-family: "medium";
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
@@ -989,7 +1076,7 @@ h1{
 }
 .top-one span{
     color: #191919ff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
@@ -1009,7 +1096,7 @@ h1{
 }
 .top-two span{
     color: rgb(73, 73, 73);
-    font-family: medium;
+    font-family: "medium";
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
@@ -1029,7 +1116,7 @@ h1{
 }
 .top-three span{
     color: rgb(73, 73, 73);
-    font-family: medium;
+    font-family: "medium";
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
@@ -1086,7 +1173,7 @@ h1{
 }
 .new-three{
     color: #191919ff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
@@ -1100,7 +1187,7 @@ h1{
 }
 .new-yok{
     color: #191919ff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
@@ -1157,7 +1244,7 @@ h1{
 }
 .los-three{
     color: currentColor;
-    font-family: medium;
+    font-family: "medium";
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
@@ -1171,7 +1258,7 @@ h1{
 }
 .los-angeles{
     color: currentColor;
-    font-family: medium;
+    font-family: "medium";
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
@@ -1209,7 +1296,7 @@ h1{
 .black-pa h2{
     margin-bottom: 8px;
     color: #ffffff;
-    font-family: medium;
+    font-family: "medium";
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
@@ -1238,7 +1325,7 @@ h1{
 }
 .alc{
     color: rgb(196, 196, 196);
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -1261,7 +1348,7 @@ h1{
 }
 .stores{
     color: rgb(196, 196, 196);
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -1291,7 +1378,7 @@ h1{
 .app-whole h2{
     margin-bottom: 8px;
     color: rgb(255, 255, 255);
-    font-family: medium;
+    font-family: "medium";
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
@@ -1307,7 +1394,7 @@ h1{
 }
 .abt{
     color: rgb(196, 196, 196);
-    font-family: medium;
+    font-family: "medium";
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -1324,7 +1411,7 @@ h1{
 .let h2{
     margin-bottom: 8px;
     color: rgb(255, 255, 255);
-    font-family: medium;
+    font-family: "medium";
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
@@ -1349,7 +1436,6 @@ h1{
     align-items: center;
 }
 .mobile{
-    opacity: 0.7;
     cursor: pointer;
     transition: opacity 0.2s;
     text-decoration: none;
@@ -1442,7 +1528,7 @@ h1{
 }
 .of{
     color: rgb(196, 196, 196);
-    font-family: regular;
+    font-family: "medium";
     font-size: 13px;
     font-weight: 500;
     line-height: 18px;
@@ -1451,7 +1537,7 @@ h1{
 }
 .year{
     color: rgb(196, 196, 196);
-    font-family: regular;
+    font-family: "medium";
     font-size: 13px;
     font-weight: 500;
     line-height: 18px;
@@ -1483,7 +1569,7 @@ h1{
     min-height: 32px;
 }
 .eng-pa{
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.01px;
@@ -1502,7 +1588,7 @@ h1{
     max-width: 100%;
     margin-right: 8px;
     display: block;
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.01px;
@@ -1512,7 +1598,7 @@ h1{
 .globe{
     display: flex;
     box-sizing: border-box;
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.01px;
@@ -1527,7 +1613,7 @@ h1{
     margin: 0px auto;
     box-sizing: border-box;
     display: block;
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.01px;
@@ -1538,7 +1624,7 @@ h1{
     position: relative;
     background: inherit;
     display: block;
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.01px;
@@ -1546,7 +1632,7 @@ h1{
     color: #191919ff;
 }
 .options{
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.01px;
@@ -1576,7 +1662,7 @@ h1{
     background: transparent;
     bottom: 0px;
     margin: auto 0px;
-    font-family: regular;
+    font-family: "medium";
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.01px;
@@ -1614,6 +1700,36 @@ h1{
     color: inherit;
     margin-left: 12px;
 }
+
+
+
+/* media-query */
+@media screen and (min-width:768px) {
+    .main_div{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
