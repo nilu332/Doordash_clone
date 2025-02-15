@@ -412,7 +412,7 @@ h1{
     max-width: 100%;
     display: inline-flex;
     min-height: 32px;
-    width: auto;
+    width: 81px;
     align-items: center;
     justify-content: flex-start;
     border-radius: 9999px;
@@ -420,7 +420,7 @@ h1{
     text-align: center;
     background-color: #ffffff;
     color: #191919ff;
-    border: 0;
+    border: none;
 }
 .icon-img-pad{
     display: block;
@@ -444,11 +444,10 @@ h1{
     flex-shrink: 2;
     min-width: 0px;
     display: flex;
-    -webkit-box-pack: start;
     justify-content: flex-start;
 }
 .icon-a{
-    width: 16px;
+    width: 17px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -458,18 +457,15 @@ h1{
 }
 .login-a{
     margin-left: 4px;
-    -webkit-box-flex: 2;
     flex-grow: 2;
-    min-width: 0px;
     display: flex;
-    -webkit-box-pack: center;
     justify-content: center;
     cursor: pointer;
     border: none;
 }
 .loginnnn{
     color: #191919ff;
-    font-family: "medium";
+    font-family: "bold";
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.01px;
@@ -486,9 +482,6 @@ h1{
 .display{
     max-width: 400px;
     width: 100%;
-    
-    /* margin: 0px auto;
-    flex: 1 0 auto; */
 }
 .brose-marg{
     margin: 20px 20px 0px 20px;
@@ -660,12 +653,13 @@ h1{
     height: 80px;
 }
 .dasher-bec h3{
-    margin-top: 0px;
     font-family: "medium";
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: -0.01px;  
+    letter-spacing: -0.01px; 
+    display: block;
+    text-align: left; 
 }
 .str{
     margin-top: 12px;
@@ -674,21 +668,47 @@ h1{
     display: flex;
     -webkit-box-align: center;
     align-items: center;
+    border: none;
 }
 .earng{
     color: #eb1700ff;
-    font-family: "medium";
+    font-family: "bold";
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.01px;
     text-decoration: none;
+    border: none;
 }
 .right-arrow{
     width: 4px;
 }
 .right-arrow svg{
     flex-shrink: 0;   
+}
+.dasher-bec-a{
+    max-width: 100%;
+    display: block;
+}
+.dasher-bec-a h2{
+    color: #191919ff;
+    font-family: "bold";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.01px;
+    text-align: left;
+    display: block;
+}
+.dasher-bec-a h3{
+    color: #191919ff;
+    font-family: "medium";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+    text-align: left;
+    display: block;
 }
 .mobile{
     max-width: 100%;
@@ -705,6 +725,7 @@ h1{
     padding: 0px;
 }
 .mobile h3{
+    color: #191919ff;
     text-decoration: none;
     font-family: "medium";
     font-size: 18px;
@@ -744,9 +765,9 @@ h1{
 .everything h2{
     text-align: left;
     max-width: 85%;
-    margin-top: 24px;
+    margin-top: 20px;
     color: #191919ff;
-    font-family: "medium";
+    font-family: "bold";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -758,7 +779,7 @@ h1{
     text-align: left;
     margin-top: 10px;
     color: #191919ff;
-    font-family: "medium";
+    font-family: "bold";
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
@@ -867,7 +888,7 @@ h1{
     filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px); 
     max-width: 90%;
     margin-top: 20px;
-    font-family: "medium";
+    font-family: "bold";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -879,7 +900,7 @@ h1{
     color: white;
     filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
     margin-top: 10px;
-    font-family: "medium";
+    font-family: "bold";
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
@@ -913,12 +934,12 @@ h1{
 }
 .picture {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: 180px;    
 }
 img{
     height: 180px;
     width: 100%;
+    object-fit: cover;
 }
 .stores-bg {
     text-align: left;
@@ -928,9 +949,9 @@ img{
 .stores-bg h2{
     text-align: left;
     max-width: 90%;
-    margin-top: 20px;
+    margin-top: 24px;
     color: #191919ff;
-    font-family: "medium";
+    font-family: "bold";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -960,7 +981,7 @@ img{
     text-align: center;
     max-width: 300px;
     color: #191919ff;
-    font-family: "medium";
+    font-family: "bold";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -1041,7 +1062,7 @@ img{
     text-align: center;
     max-width: 300px;
     color: #191919ff;
-    font-family: "medium";
+    font-family: "bold";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -1096,7 +1117,7 @@ img{
     max-width: 90%;
     margin-top: 20px;
     color: #191919ff;
-    font-family: "medium";
+    font-family: "bold";
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -1124,8 +1145,8 @@ img{
 }
 .more-pa h2{
     text-align: center;
-    margin-bottom: 4px;
-    font-family: "medium";
+    margin-bottom: 20px;
+    font-family: "bold";
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
@@ -1142,16 +1163,14 @@ img{
     display: flex;
     height: 40px;
     justify-content: center;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
     align-items: center;
     text-align: center;
     background: rgb(255, 255, 255);
-    border-bottom: 3px solid;
+    border-bottom: 3px solid #606060ff;
 }
 .top-one span{
     color: #191919ff;
-    font-family: "medium";
+    font-family: "bold";
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
@@ -1159,15 +1178,14 @@ img{
     display: block;
 }
 .top-two{
+    height: 40px;
     width: 33.33%;
     display: flex;
-    height: 40px;
     justify-content: center;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
     align-items: center;
     text-align: center;
-    background: rgb(255, 255, 255);   
+    background: rgb(255, 255, 255); 
+    border-bottom: 2px solid #f1f1f1ff;  
 }
 .top-two span{
     color: rgb(73, 73, 73);
@@ -1188,6 +1206,7 @@ img{
     align-items: center;
     text-align: center;
     background: rgb(255, 255, 255);
+    border-bottom: 2px solid #f1f1f1ff;  
 }
 .top-three span{
     color: rgb(73, 73, 73);
@@ -1207,17 +1226,12 @@ img{
     width: 50%;
 }
 .new{
-    border-radius: 0px;
     position: relative;
     max-width: 100%;
-    margin: 0px;
-    padding: 0px;
     display: flex;
     min-height: 40px;
     width: 100%;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
     cursor: pointer;
     background-color: #ffffff;
@@ -1225,7 +1239,6 @@ img{
 }
 .new-pa{
     display: block;
-    -webkit-box-flex: 1;
     flex-grow: 1;
     max-width: 100%;
     opacity: 1;
@@ -1235,20 +1248,16 @@ img{
 .new-one{
     max-width: 100%;
     display: flex;
-    -webkit-box-pack: center;
     justify-content: center;
     flex-direction: row;
 }
 .new-two{
-    -webkit-box-flex: 2;
     flex-grow: 2;
-    min-width: 0px;
-    -webkit-box-pack: center;
     justify-content: center;
 }
 .new-three{
     color: #191919ff;
-    font-family: "medium";
+    font-family: "bold";
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
@@ -1440,7 +1449,7 @@ img{
     text-align: center;
     flex: 1 1 0%;
     display: flex;
-    -webkit-box-pack: justify;
+
     justify-content: space-between;
     gap: 12px;
 }
@@ -1464,7 +1473,6 @@ img{
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-    transition: filter 0.2s;
     margin-top: 8px;
 }
 .abt{
@@ -1599,7 +1607,7 @@ img{
 .of{
     color: rgb(196, 196, 196);
     font-family: "medium";
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 18px;
     letter-spacing: -0.01px;
@@ -1608,7 +1616,7 @@ img{
 .year{
     color: rgb(196, 196, 196);
     font-family: "medium";
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 18px;
     letter-spacing: -0.01px;
@@ -1770,3 +1778,12 @@ img{
     color: inherit;
     margin-left: 12px;
 }
+
+
+
+
+
+
+
+
+
